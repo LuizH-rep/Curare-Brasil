@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+}
+
+h1 {
+  font-family: Lato;
+}
+p {
+  font-family: Noto Sans Display;
+}
+
+/*HEADER*/
+
+header {
+  margin-top: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  border-radius: 0.4rem;
+}
+
+#Hcontent {
+  display: flex;
+
+  justify-content: center;
+  justify-content: space-between;
+
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#Htext {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#Hnav {
+  display: flex;
+  gap: 1rem;
+
+  align-self: center;
+
+  margin-right: 0.5rem;
+}
+
+.Hbt {
+  font-family: lato;
+
+  height: 2rem;
+  width: auto;
+  height: auto;
+
+  border: none;
+  border-radius: 0.5rem;
+}
+
+#Hbt1,
+#Hbt2 {
+  cursor: pointer;
+  font-size: large;
+  font-weight: bolder;
+
+  color: rgb(235, 240, 247);
+}
+
+#Hbt1:hover,
+#Hbt2:hover {
+  box-shadow: 1px 0px 10px rgba(176, 169, 121, 0.561);
+}
+
+#Hbt3 {
+  font-size: large;
+  cursor: pointer;
+  background-color: rgb(142, 202, 230);
+  color: rgb(2, 48, 71);
+
+  border: 0.1rem solid rgb(2, 48, 71);
+
+  height: auto;
+}
+
+.sideB {
+  font-weight: bold;
+
+  width: 10rem;
+  height: 2rem;
+
+  border: none;
+  border-top: 1px solid;
+
+  cursor: pointer;
+}
+#sideB2 {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+#btema {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.btPe {
+  font-weight: bold;
+
+  width: 10rem;
+  height: 2rem;
+
+  border: none;
+  border-top: 1px solid;
+
+  cursor: pointer;
+}
+
+.Abt {
+ 
+  font-weight: bold;
+
+  width: 10rem;
+  height: 2rem;
+
+  border: none;
+  border-top: 1px solid;
+
+  cursor: pointer;
+}
+
+#Abt16 {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+#Periodos {
+  display: none;
+  flex-direction: column;
+}
+
+#Artistas {
+  display: none;
+  flex-direction: column;
+}
+
+#side {
+   z-index: 1;
+  display: none;
+  flex-direction: column;
+
+  opacity: 1;
+  visibility: visible;
+
+  height: auto;
+  width: auto;
+
+  position: absolute;
+
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.35);
+}
+
+
+/*---Main---*/
+
+#Mtext {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 2rem;
+
+  width: 95%;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 4rem;
+
+  border-radius: 0.5rem;
+}
+
+#Mtext p {
+  max-width: 80%;
+
+  text-align: justify;
+  text-align-last: center;
+
+  font-weight: bold;
+}
+
+/*---Périodos Históricos-index---*/
+
+#Dpe {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+  width: 100;
+
+  padding: 1rem;
+  padding-bottom: 5rem;
+  margin-bottom: 4rem;
+
+  background-color: aqua;
+}
+
+#Dpe h3 {
+  text-align: justify;
+  text-align-last: center;
+}
+
+#peINFO {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+#pe1 {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 35rem;
+  width: 40rem;
+
+  min-width: 30rem;
+  min-height: 30rem;
+
+  background-color: aqua;
+
+  border-radius: 0.5rem;
+}
+
+#peIMG {
+  height: 30rem;
+  width: 30rem;
+
+  min-width: 20rem;
+  min-width: 20rem;
+
+  margin-top: 2rem;
+
+  overflow: hidden;
+}
+
+#peIMG img {
+  object-fit: cover;
+  display: block;
+}
+
+#pe1 button {
+  height: 4rem;
+  width: 10rem;
+
+  margin-bottom: 4em;
+
+  font-weight: bold;
+  font-size: medium;
+
+  border-radius: 1rem;
+}
+
+#pe2 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 2rem;
+
+  height: 35rem;
+  width: 40rem;
+
+  min-height: 35rem;
+  min-width: 30rem;
+
+  border-radius: 0.5rem;
+}
+
+#pe2 p {
+  font-size: medium;
+  font-weight: bold;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  text-align: justify;
+  text-align-last: center;
+}
+
+#listP:hover {
+  cursor: pointer;
+}
+
+/*---Artistas-index---*/
+
+#ArD {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  justify-self: center;
+
+  align-items: center;
+  text-align: center;
+}
+
+#ArD section {
+  background-color: rgb(0, 124, 124);
+
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 0 ;
+  border-bottom-right-radius: 0;
+  width: auto;
+
+  padding: 1rem;
+
+}
+
+.Aimg{
+  height: 12rem;
+  width: 14rem;
+  border-radius: 1rem;
+}
+
+#ArIMG{
+  margin-bottom: 2rem;
+}
+
+#ArD2{
+  border-radius: .5rem;
+  background-color: aqua;
+  width: 80%;
+  padding-top: 1rem;
+}
+
+#ArD2 button{
+
+font-size: medium;
+font-weight: bold;
+
+border-radius: .5rem;
+
+height: 3rem;
+
+  margin-bottom: 1rem;
+}
+
+/*---footer---*/
+
+footer{
+  display: flex;
+  flex-direction: row;
+
+align-items: center;
+justify-content: center;
+gap: 30%;
+
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: rgb(3, 169, 244);
+}
+
+#topo{
+  width: auto;
+  height: 3rem;
+
+  border-radius: 1rem;
+}
