@@ -11,6 +11,12 @@ p {
   font-family: Noto Sans Display;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
 /*HEADER*/
 
 header {
@@ -156,6 +162,7 @@ header {
 
   position: absolute;
   justify-self: center;
+  
 
   margin-top: 0.5rem;
   margin-right: 0.5rem;
