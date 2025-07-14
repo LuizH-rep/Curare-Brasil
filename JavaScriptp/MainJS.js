@@ -460,4 +460,4 @@ function upage() {
   });
 }
 
-top.addEventListener("click", upage);
+topo.addEventListener("click", upage);

@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -233,8 +235,7 @@ header {
   height: 35rem;
   width: 40rem;
 
-  min-width: 30rem;
-  min-height: 30rem;
+  
 
   background-color: aqua;
 
@@ -245,12 +246,9 @@ header {
   height: 30rem;
   width: 30rem;
 
-  min-width: 20rem;
-  min-width: 20rem;
-
   margin-top: 2rem;
 
-  overflow: hidden;
+  overflow:hidden;
 }
 
 #peIMG img {
@@ -280,9 +278,6 @@ header {
 
   height: 35rem;
   width: 40rem;
-
-  min-height: 35rem;
-  min-width: 30rem;
 
   border-radius: 0.5rem;
 }
@@ -377,4 +372,91 @@ gap: 30%;
   height: 3rem;
 
   border-radius: 1rem;
+}
+
+/*---responsividade---*/
+
+@media (max-width: 1049px) {
+
+#Htext{
+  font-size: small;
+}
+
+#ArIMG{
+  flex-direction: column;
+}
+
+#peINFO{
+  display: flex;
+  flex-direction: column;
+}
+}
+
+@media (max-width: 837px ) {
+
+#peINFO{
+  height: auto;
+}
+
+#pe1{
+  width: 5rem;
+ 
+}
+
+#pe2{
+  width: 5rem;
+
+}
+
+#peIMG {
+  height: 20rem;
+  width: 20rem;
+
+  min-width: 10rem;
+  min-width: 10rem;
+
+  margin-top: 2rem;
+
+  overflow:hidden;
+}
+
+#peIMG img {
+   width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+
+}
+
+#Hbt1{
+  display: none;
+}
+
+#Hbt2{
+  display: none;
+}
+
+#Mtext{
+  margin: 0;
+}
+
+}
+
+@media (max-width:500px){
+
+
+#pe1{
+  height: 20rem;
+  width: 20rem;
+}
+
+#pe1 button{
+  margin: 1rem;
+}
+
+#pe2{
+  height: 20rem;
+  width: 20rem;
+}
+
 }
