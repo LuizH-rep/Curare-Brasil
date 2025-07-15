@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Lato;
+}
+p {
+  font-family: Noto Sans Display;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+/*---Header---*/
+
+#header{
+display: flex;
+
+justify-content: center;
+
+padding: 2.5rem;
+margin-bottom: 3rem;
+
+text-align: justify;
+text-align-last: center;
+
+font-weight: bold;
+font-size: large;
+
+background-color: rgb(11, 107, 107);
+}
+
+/*---Principal---*/
+
+#Plist{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5rem;
+}
+
+#Plist2{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5rem;
+}
+
+#a{
+    display: flex;
+    align-items: center;
+}
+
+#b{
+    display: flex;
+    align-items: center;
+}
+
+#c{
+    display: flex;
+    align-items: center;
+}
+
+#d{
+    display: flex;
+    align-items: center;
+}
+
+
+.Pcard1{
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 30rem;
+    width: 30rem;
+
+    border-radius: .5rem;
+
+}
+
+.Pcard2{
+
+
+    height: 28rem;
+    width: 35rem;
+
+    border-bottom-right-radius: .5rem ;
+    border-top-right-radius: .5rem;
+
+}
+
+.Pcard2 section{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+
+    margin: 1rem;
+}
+
+.Pimg{
+
+height: 25rem;
+width: 25rem;
+
+margin: 1rem;
+margin-bottom: .5rem;
+
+}
+
+.Pbt{
+    font-weight: bold;
+    font-size: medium;
+
+    padding: .5rem;
+    margin-bottom: 1rem;
+
+    border-radius: .5rem;
+}
+
+/*---footer---*/
+
+footer{
+  display: flex;
+  flex-direction: row;
+
+align-items: center;
+justify-content: center;
+gap: 30%;
+
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: rgb(3, 169, 244);
+}
+
+#topo{
+  width: auto;
+  height: auto;
+
+  border-radius: 1rem;
+
+  padding: .5rem;
+}
+
+/*---responsividade---*/
+
+@media(max-width:1080px){
+  
+  #a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#d{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media(max-width:590px){
+
+.Pcard1{
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 20rem;
+    width: 20rem;
+
+    border-bottom-left-radius: 0 ;
+    border-bottom-right-radius: 0;
+
+}
+
+.Pimg{
+
+height: 14rem;
+width: 14rem;
+
+margin: 1rem;
+margin-bottom: .5rem;
+
+}
+
+.Pcard2{
+
+
+    height: auto;
+    width: 25rem;
+
+border-radius: .5rem;
+
+}
+
+}
+
+@media(max-width:430px){
+
+  .Pcard1{
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 17rem;
+    width: 17rem;
+
+    border-bottom-left-radius: 0 ;
+    border-bottom-right-radius: 0;
+
+}
+
+.Pimg{
+
+height: 14rem;
+width: 14rem;
+
+padding-top: 1rem;
+margin-bottom: .5rem;
+
+}
+
+.Pcard2{
+
+
+    height: auto;
+    width: 20rem;
+
+border-radius: .5rem;
+
+}
+
+.Pbt{
+    font-weight: bold;
+    font-size: medium;
+
+  width: 15rem;
+
+    border-radius: .5rem;
+}
+
+#Pbt1{
+  margin-bottom: 2rem;
+}
+
+#col4{
+  height: 20rem;
+}
+
+#Ctext2{
+  
+}
+
+}
