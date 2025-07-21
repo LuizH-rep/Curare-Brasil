@@ -4,17 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cadastro de Usuário</title>
-  <link rel="stylesheet" href="/CSS/cadastro.css" />
+  <link rel="stylesheet" href="/CSS/cadastro.css">
 </head>
 <body>
   <main class="container">
-    <h1>Cadastro de Usuário</h1>
-    <form id="formCadastro" novalidate>
-      <div class="campo">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Digite seu nome" required />
-        <span class="erro" id="erroNome"></span>
-      </div>
+    <h1>Login</h1>
+    <form id="formLogin" novalidate>
 
       <div class="campo">
         <label for="email">Email</label>
@@ -28,18 +23,12 @@
         <span class="erro" id="erroSenha"></span>
       </div>
 
-      <div class="campo">
-        <label for="confirmarSenha">Confirmar Senha</label>
-        <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" required />
-        <span class="erro" id="erroConfirmarSenha"></span>
-      </div>
-
-      <button type="submit">Cadastrar</button>
+      <button type="submit">Login</button>
     </form>
 
     <div id="mensagemSucesso" class="sucesso"></div>
   </main>
 
-  <script src="JavaScriptp/index.js"></script>
+  <script src="/JavaScriptp/login.js"></script>
 </body>
 </html>
