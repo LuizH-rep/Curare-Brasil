@@ -1,3 +1,28 @@
+const tema = localStorage.getItem("tema");
+
+if (tema === "escuro") {
+  document.body.style.backgroundColor = "rgb(15, 23, 42)";
+  document.body.style.color = "rgb(255, 251, 245)";
+
+   document.getElementById("container").style.backgroundColor = "rgb(3, 169, 244)"
+  document.getElementById("container").style.color = "rgb(255, 251, 245)"
+  document.getElementById("Lbt").style.backgroundColor = "rgb(55, 71, 79)"
+    document.getElementById("Lbt").style.color = "rgb(255, 251, 245)"
+ 
+} 
+
+else {
+  document.body.style.backgroundColor = "rgb(255, 243, 224)";
+  document.body.style.color = "rgb(38, 50, 56)";
+
+  document.getElementById("container").style.backgroundColor = "rgb(245, 124, 0)"
+  document.getElementById("container").style.color = "rgb(38, 50, 56)"
+  document.getElementById("Lbt").style.backgroundColor = "rgb(255, 224, 178)"
+    document.getElementById("Lbt").style.color = "rgb(38, 50, 56)"
+
+}
+
+
 const form  = document.getElementById("formLogin");
 const mensagemSucesso = document.getElementById("mensagemSucesso");
 

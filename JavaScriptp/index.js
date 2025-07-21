@@ -1,5 +1,35 @@
+const tema = localStorage.getItem("tema");
+
+if (tema === "escuro") {
+  document.body.style.backgroundColor = "rgb(15, 23, 42)";
+  document.body.style.color = "rgb(255, 251, 245)";
+
+   document.getElementById("container").style.backgroundColor = "rgb(3, 169, 244)"
+  document.getElementById("container").style.color = "rgb(255, 251, 245)"
+  document.getElementById("Lbt").style.backgroundColor = "rgb(55, 71, 79)"
+    document.getElementById("Lbt").style.color = "rgb(255, 251, 245)"
+ 
+} 
+
+else {
+  document.body.style.backgroundColor = "rgb(255, 243, 224)";
+  document.body.style.color = "rgb(38, 50, 56)";
+
+  document.getElementById("container").style.backgroundColor = "rgb(245, 124, 0)"
+  document.getElementById("container").style.color = "rgb(38, 50, 56)"
+  document.getElementById("Lbt").style.backgroundColor = "rgb(255, 224, 178)"
+    document.getElementById("Lbt").style.color = "rgb(38, 50, 56)"
+
+}
+
 const form = document.getElementById("formCadastro");
 const mensagemSucesso = document.getElementById("mensagemSucesso");
+
+const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+if(usuarios.length > 0){
+    window.location.href = "login.html"
+}
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -48,13 +78,14 @@ const novoUsuario = {nome, email, senha}
 usuarios.push(novoUsuario);
 localStorage.setItem("usuarios", JSON.stringify(usuarios))
 
-console.log("Usuarios Cadastraddos:", usuarios);
+console.log("Usuarios Cadastrados:", usuarios);
 
 mensagemSucesso.textContent = "Cadastro realizado com sucesso";
 
-window.location.href="login.html"
+ window.location.href = "login.html"
 
 form.reset();
+
 
 })
 
