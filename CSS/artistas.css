@@ -17,6 +17,7 @@ html, body {
 }
 
 
+
 /*---Header---*/
 
 #header{
@@ -46,7 +47,7 @@ background-color: rgb(11, 107, 107);
     align-items: center;
 
     padding: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 
     background-color: rgb(90, 87, 87);
 
@@ -85,7 +86,23 @@ color: white;
     font-weight: bold;
 }
 
+.TL{
+  display: flex;
 
+  justify-self: center;
+
+  justify-content: center;
+
+  margin:2rem;
+
+  width: 20rem;
+  padding: .5rem;
+
+  border-radius: .5rem;
+  background-color: aqua;
+
+  
+}
 
 /*---footer---*/
 
