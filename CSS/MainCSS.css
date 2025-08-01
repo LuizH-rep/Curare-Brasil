@@ -99,10 +99,7 @@ header {
 
   cursor: pointer;
 }
-#sideB2 {
-  border-bottom-left-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
-}
+
 
 #btema {
   border-top-left-radius: 0.3rem;
@@ -134,7 +131,7 @@ header {
   cursor: pointer;
 }
 
-#Abt16 {
+#sair {
   border-bottom-left-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
 }
@@ -358,6 +355,10 @@ border-radius: .5rem;
 height: 3rem;
 
   margin-bottom: 1rem;
+}
+
+#ArBT a:active{
+  text-decoration: none;
 }
 
 /*---footer---*/

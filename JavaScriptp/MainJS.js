@@ -1,4 +1,4 @@
-/*---Iniciando a biblioteca Aos---*/
+const user = JSON.parse(localStorage.getItem("usuarios"));
 
 /*--Troca de tema--*/
 const bt = document.getElementById("btema");
@@ -97,6 +97,10 @@ document.getElementById("footer").style.color = "rgb(255, 251, 245)"
 document.getElementById("topo").style.backgroundColor = "rgb(55, 71, 79)"
 document.getElementById("topo").style.color = "rgb(255, 251, 245)"
 
+document.getElementById("sair").style.backgroundColor = "rgb(15, 23, 42)"
+document.getElementById("sair").style.color = "rgb(255, 251, 245)"
+
+
 
 } else {
   document.body.style.backgroundColor = "	rgb(255, 243, 224)";
@@ -189,6 +193,9 @@ document.getElementById("footer").style.backgroundColor = "rgb(245, 124, 0)"
 document.getElementById("footer").style.color = "rgb(38, 50, 56)"
 document.getElementById("topo").style.backgroundColor = "rgb(255, 224, 178)"
 document.getElementById("topo").style.color = "rgb(38, 50, 56)"
+
+document.getElementById("sair").style.backgroundColor = "rgb(255, 243, 224)"
+document.getElementById("sair").style.color = "rgb(38, 50, 56)"
 }
 
 function cor() {
@@ -289,6 +296,9 @@ document.getElementById("footer").style.color = "rgb(255, 251, 245)"
 document.getElementById("topo").style.backgroundColor = "rgb(55, 71, 79)"
 document.getElementById("topo").style.color = "rgb(255, 251, 245)"
 
+document.getElementById("sair").style.backgroundColor = "rgb(15, 23, 42)"
+document.getElementById("sair").style.color = "rgb(255, 251, 245)"
+
     localStorage.setItem("tema", "escuro");
   } else {
     document.body.style.backgroundColor = "	rgb(255, 243, 224)";
@@ -386,6 +396,9 @@ document.getElementById("footer").style.color = "rgb(38, 50, 56)"
 document.getElementById("topo").style.backgroundColor = "rgb(255, 224, 178)"
 document.getElementById("topo").style.color = "rgb(38, 50, 56)"
 
+document.getElementById("sair").style.backgroundColor = "rgb(255, 243, 224)"
+document.getElementById("sair").style.color = "rgb(38, 50, 56)"
+
     localStorage.setItem("tema", "claro");
   }
 
@@ -440,7 +453,7 @@ function ArMenu() {
   } else {
     document.getElementById("Artistas").style.display = "none";
     document.getElementById("sideB2").style.borderRadius =
-      "0rem 0rem .3rem .3rem";
+      "0rem 0rem .0rem .0rem";
     document.getElementById("sideB2").textContent = "Artistas ⬇";
   }
 
@@ -448,6 +461,22 @@ function ArMenu() {
 }
 
 Ar.addEventListener("click", ArMenu);
+
+
+
+
+if(!user){
+    alert("Acesso negado ! Faça login primeiro");
+    window.location.href = "index.html";
+
+} else {
+
+    document.getElementById("sair").addEventListener("click", () => {
+        localStorage.removeItem("usuarios");
+        alert("Você saiu, obrigado por usar nosso site!");
+        window.location.href = "index.html"
+    })
+}
 
 /*---topo da pagina---*/
 
@@ -461,3 +490,5 @@ function upage() {
 }
 
 topo.addEventListener("click", upage);
+
+

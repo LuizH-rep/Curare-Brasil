@@ -59,7 +59,8 @@ document.getElementById("ARcard4").style.backgroundColor = "rgb(255, 224, 178)";
 document.getElementById("ARbt4").style.backgroundColor = "rgb(245, 124, 0)";
 document.getElementById("ARbt4").style.color = "rgb(38, 50, 56)";
 
-
+document.getElementById("TL1").style.backgroundColor = "rgb(245, 124, 0)"
+document.getElementById("TL2").style.backgroundColor = "rgb(245, 124, 0)"
 }
 
 

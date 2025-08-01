@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 { 
+  font-family: Lato;
+}
+p {
+  font-family: Noto Sans Display;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*---Header---*/
+
+#header{
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+gap: .6rem;
+
+margin: 1rem;
+margin-top: 0;
+
+border-radius: .5rem;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+
+}
+
+#header button{
+  border-radius: .5rem;
+
+  padding: .4rem;
+
+  margin-bottom: .5rem;
+
+  font-weight: bold;
+}
+
+/*---Card do artista---*/
+
+#AIinfo{
+  display: flex;
+
+  background-color: aqua;
+  padding: 1rem;
+
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+#AItext{
+  align-self: center;
+  
+  width: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#AIinfo img{
+
+  width: 15rem;
+  height: 15rem;
+
+  flex-shrink: 0; 
+
+}
+
+/*---Card Das obras---*/
+
+#OAtittle{
+  display: flex;
+  background-color: aqua;
+
+  width: fit-content;
+  padding: 1rem;
+
+  border-top-left-radius: .5rem ;
+  border-top-right-radius: .5rem;
+
+  justify-self: center;
+}
+
+.OAcard{
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: aquamarine;
+
+  margin-bottom: 1rem;
+
+  margin: 2rem;
+  margin-top: 0 ;
+
+  border-radius: .5rem;
+}
+
+.OAinfo{ 
+  display: flex;
+}
+.OAinfo img{
+
+  width: 17rem;
+  height: 20rem;
+
+  flex-shrink: 0; 
+
+  margin: 1rem;
+  margin-right: 0;
+
+}
+.OAtext{
+  
+  background-color: antiquewhite;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  align-self: center;
+
+  height: fit-content;
+
+
+  margin-right: 1rem;
+  padding: .5rem;
+
+  border-radius: .5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  font-weight: bolder;
+}
+
+
+.OA{
+  background-color: antiquewhite;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  
+  text-align: justify;
+  text-align-last: center ;
+
+  border-radius: .5rem ;
+
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/*---footer---*/
+
+footer{
+  display: flex;
+  flex-direction: row;
+
+align-items: center;
+justify-content: center;
+gap: 30%;
+
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: rgb(3, 169, 244);
+}
+
+#topo{
+  width: auto;
+  height: auto;
+
+  border-radius: 1rem;
+
+  padding: .5rem;
+}
+
+/*---Responsividade---*/
+
+
+@media (max-width: 850px){
+
+  header h1{
+    font-size:larger;
+  }
+
+  #AIinfo{
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1rem;
+  }
+
+  #AItext{
+    text-align: justify;
+    text-align-last: center ;
+  }
+
+  .OAinfo{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .OAtext{
+    margin: 1rem;
+    border-radius: .5rem ;
+  }
+
+  .OA{
+    width: auto;
+  }
+  .OA h1{
+    width: auto;
+  }
+}
